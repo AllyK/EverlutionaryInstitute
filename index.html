@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Everlutionary Institute — Ecosystem Map &amp; Evidence</title>
+<title>The Everlutionary Institute Online Ecosystem</title>
 <style>
   :root{
     --cream:#FAF7F0; --sand:#F1EADB; --parchment:#F0E2C2; --stone:#D9CFBE;
@@ -138,318 +138,136 @@
   footer{background:var(--forest);color:var(--moss);padding:38px 0;font-size:13px}
   footer a{color:var(--sage)}
   footer .tag{font-family:Georgia,serif;font-style:italic;font-size:16px;color:#fff;margin-bottom:14px}
+
+  /* field matrix */
+  .tensions{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:24px 0 10px}
+  .tension{background:#fff;border:1px solid var(--stone);border-radius:12px;padding:20px;border-top:5px solid #C97B7B}
+  .tension .lbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);font-weight:700}
+  .tension h4{color:#8A3B3B;font-family:Georgia,serif;margin:3px 0 6px;font-size:16px}
+  .tension p{font-size:13px;color:var(--grey)}
+  table.matrix td:first-child{width:22%}
+  .mtype{display:block;font-size:11px;color:var(--grey);text-transform:uppercase;letter-spacing:.05em;margin-top:3px;font-weight:400}
+  .tag{display:inline-block;border-radius:20px;padding:1px 9px;font-size:10.5px;font-weight:700;margin-top:6px}
+  .tag-collab{background:var(--moss);color:var(--pine)}
+  .tag-both{background:var(--parchment);color:var(--amber)}
+  .tag-compete{background:#F4CCCC;color:#8A3B3B}
+  .tag-channel{background:var(--stone);color:var(--ink)}
+  .ttag{display:inline-block;border-radius:20px;padding:1px 8px;font-size:10px;font-weight:700;margin-left:5px;vertical-align:1px}
+  .t-none{background:var(--moss);color:var(--pine)}
+  .t-mild{background:var(--parchment);color:var(--amber)}
+  .t-strong{background:#F4CCCC;color:#8A3B3B}
+  tr.grp td{background:var(--pine);color:var(--moss);font-family:Georgia,serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:8px 16px}
+  tr.grp:hover td{background:var(--pine)}
+
+  /* gift economy */
+  .pullgift{background:var(--mist);border-left:6px solid var(--leaf);border-radius:10px;padding:20px 24px;margin:6px 0;font-size:16px;font-style:italic;color:var(--ink)}
+  .pullgift .who{font-style:normal;font-size:12.5px;color:var(--grey);margin-top:8px}
+  .gifts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:22px 0 8px}
+  .gift{background:#fff;border:1px solid var(--stone);border-radius:12px;padding:20px;border-top:5px solid var(--sage)}
+  .gift .gn{font-family:Georgia,serif;color:var(--amber);font-size:12px;letter-spacing:.12em;font-weight:bold}
+  .gift h4{color:var(--pine);font-family:Georgia,serif;font-size:17px;margin:2px 0 7px}
+  .gift .principle{font-size:12.5px;color:var(--grey);margin-bottom:10px}
+  .gift .inst{font-size:13.5px;color:var(--ink);border-top:1px dashed var(--stone);padding-top:9px}
+  .gift .inst b{color:var(--green);font-family:Georgia,serif}
+
+  .ep{display:inline-block;border-radius:20px;padding:1px 9px;font-size:10.5px;font-weight:700;margin-top:6px;margin-left:4px;background:var(--mist);color:var(--pine)}
+  td .ep{margin-top:0}
+
+  section a{color:var(--green);font-weight:600}
+
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 4px}
+  .bigbtn{display:inline-block;background:var(--green);color:#fff;border-radius:26px;padding:13px 26px;font-size:15px;font-weight:600;text-decoration:none}
+  .bigbtn:hover{background:var(--pine);color:#fff}
+  .bigbtn.alt{background:transparent;color:var(--pine);border:1.5px solid var(--sage)}
+  .bigbtn.alt:hover{background:var(--mist)}
+  .idea .num{white-space:nowrap}
 </style>
 </head>
 <body>
 
 <nav><div class="wrap">
-  <span class="brand">Everlutionary Institute · Ecosystem Map</span>
-  <a href="#ecosystem">Ecosystem</a>
-  <a href="#evidence">Evidence</a>
-  <a href="#moves">Design moves</a>
-  <a href="#patreon">From Patreon</a>
-  <a href="#platform">Platform</a>
-  <a href="#collaborators">Collaborators</a>
-  <a href="#pitch">The pitch</a>
-  <a href="#next">Next steps</a>
+  <span class="brand">Everlutionary Institute · The Plan</span>
+  <a href="#plan">The plan</a>
+  <a href="#home">Where it lives</a>
+  <a href="Everlutionary-WordPress-Demo.html">WordPress demo</a>
+  <a href="everlutionary-ecosystem-map.html">Full details</a>
 </div></nav>
 
 <header>
   <div class="wrap">
     <div class="kicker">From Ally Krupar, Rooted Action · For Hawah Kasat</div>
-    <h1>One living ecosystem</h1>
-    <p class="sub">Everything you already make: the podcast, the practices, the writing, the inner circle, the land. Woven into a single path a person can walk.</p>
+    <h1>The Everlutionary Institute Online Ecosystem</h1>
+    <p class="sub">Bring the podcast, the practices, the writing, the community, and the land into a single online learning home, building on your existing WordPress page. This proposal focuses only on connecting what already exists.</p>
+    <div class="cta-row" style="justify-content:center">
+      <a class="bigbtn" href="Everlutionary-WordPress-Demo.html">See the WordPress demo &#8594;</a>
+      <a class="bigbtn alt" href="everlutionary-ecosystem-map.html">Read the full details</a>
+    </div>
     <div class="meta">Ally Krupar · Rooted Action · July 2026</div>
   </div>
 </header>
 
-<section id="ecosystem">
+<section id="plan">
   <div class="wrap">
-    <div class="sec-label">The framing</div>
-    <h2>The ecosystem, not a new platform</h2>
-    <p class="lede">Nothing here asks you to abandon a channel or start over. Each surface you've built keeps doing what it does best, and the Institute becomes the place they all point toward: the trunk your scattered branches finally share. A person moves through five verbs:</p>
-
-    <div class="flow">
-      <div class="step"><div class="em">🌧️</div><h4>Discover</h4><p>YouTube, Apple, Spotify. A stranger meets one conversation.</p></div>
-      <div class="arrow">→</div>
-      <div class="step"><div class="em">🫁</div><h4>Practice</h4><p>Insight Timer. A free 13-minute breath, no account, no ask.</p></div>
-      <div class="arrow">→</div>
-      <div class="step"><div class="em">📖</div><h4>Deepen</h4><p>Substack. The written companion, the book's first look.</p></div>
-      <div class="arrow">→</div>
-      <div class="step"><div class="em">🔥</div><h4>Connect</h4><p>The Institute. Sangha, pathways, live circles. Your patrons are the founding circle.</p></div>
-      <div class="arrow">→</div>
-      <div class="step"><div class="em">⛰️</div><h4>Return</h4><p>Roots to Sky. Ceremony and land, in person.</p></div>
-    </div>
-
-    <p class="lede" style="margin-bottom:18px"><b style="color:var(--pine)">Click each surface</b> to see what it is today and the role it plays in the ecosystem.</p>
-    <div class="eco-grid">
-      <div class="node" onclick="this.classList.toggle('open')">
-        <h3>🎙️ The Everlutionary podcast</h3>
-        <div class="role">The source · Discover</div>
-        <div class="now">44 episodes, biweekly since 2024, rated 5.0 from 84 reviews on Apple Podcasts. Your new conversation with Kazu Haga on healing polarization just landed on YouTube.</div>
-        <div class="stat-pills"><span class="pill">5.0 ★ · 84 ratings</span><span class="pill">44+ episodes</span><span class="pill">biweekly</span></div>
-        <div class="more"><b>Role in the ecosystem:</b> the original source, and a curriculum in disguise. Every episode already carries the Institute's DNA: a theme, a teaching, a guest's wisdom. Modules begin as episodes your community knows and loves, so the Institute feels like the show deepening, not a new thing to learn.</div>
-        <div class="hint">click to expand ▾</div>
-      </div>
-      <div class="node" onclick="this.classList.toggle('open')">
-        <h3>▶️ YouTube</h3>
-        <div class="role">The front door · Discover</div>
-        <div class="now">7,280 subscribers, 147 videos including shorts. Full episodes with a strong visual identity, plus a channel trailer at 2.4k views in two months.</div>
-        <div class="stat-pills"><span class="pill">7.28k subscribers</span><span class="pill">147 videos</span><span class="pill">top video 17k views</span></div>
-        <div class="more"><b>Role in the ecosystem:</b> where strangers find you. Nine full episodes have crossed 9k to 17k views, proof the themes travel. Each Institute module gets a public YouTube excerpt that ends with an invitation to the practice, not a paywall. Shorts become the trailhead for the episode-map explorer.</div>
-        <div class="hint">click to expand ▾</div>
-      </div>
-      <div class="node" onclick="this.classList.toggle('open')">
-        <h3>🧘 Insight Timer</h3>
-        <div class="role">The free gift · Practice</div>
-        <div class="now">Joined May 2026, two tracks so far, and the 13-Minute Rhythmic Breath is already surfaced as the featured track on your teacher page, rated 5 stars.</div>
-        <div class="stat-pills"><span class="pill">featured 13-min breath</span><span class="pill">5 ★ tracks</span><span class="pill">30M-member platform</span></div>
-        <div class="more"><b>Role in the ecosystem:</b> top of funnel for practice-first people who will never find a podcast. Every Institute module yields one short practice published free here: Breath as Medicine, module by module. Profile links carry practitioners home to the Institute. Your newest surface, and the fastest early signal.</div>
-        <div class="hint">click to expand ▾</div>
-      </div>
-      <div class="node" onclick="this.classList.toggle('open')">
-        <h3>✍️ Substack</h3>
-        <div class="role">The written companion · Deepen</div>
-        <div class="now">Show notes and essays for most episodes. Public engagement is currently light, and that reads as untapped, not unloved.</div>
-        <div class="stat-pills"><span class="pill">essay companions</span><span class="pill">free tier</span><span class="pill">underused today</span></div>
-        <div class="more"><b>Role in the ecosystem:</b> becomes the reflection layer. Each module's journaling prompt and distilled teaching publishes here, plus First Look book chapters. A paid tier can mirror Institute membership later. The transcription project (44 episodes) feeds this surface almost for free.</div>
-        <div class="hint">click to expand ▾</div>
-      </div>
-      <div class="node" onclick="this.classList.toggle('open')">
-        <h3>🤝 Patreon</h3>
-        <div class="role">The inner circle · Connect</div>
-        <div class="now">Five benefits today: the Somatic Sanctuary (bonus practice episodes), show-idea polls, First Look pre-reading, a 1:1 Deep Dive session, and on-air shout outs.</div>
-        <div class="stat-pills"><span class="pill">5 member benefits</span><span class="pill">bonus practices</span><span class="pill">1:1 access</span></div>
-        <div class="more"><b>Role in the ecosystem:</b> the seed of the membership. Every Patreon benefit maps to a richer Institute equivalent (see the table below), and your Partners, Sustainers, Alchemists, Visionaries, Fire Keepers, and Space Holders become the founding circle, names intact. Nothing is taken away; everything deepens. Member counts live in your dashboard, and I'd love to look at them with you before we price anything.</div>
-        <div class="hint">click to expand ▾</div>
-      </div>
-      <div class="node" onclick="this.classList.toggle('open')">
-        <h3>🏛️ The Institute</h3>
-        <div class="role">The learning home · Connect</div>
-        <div class="now">The new piece: a community-first home where episodes become pathways (Roots → Trunk → Branches → Canopy → Sky), held by live circles and an open sangha from day one.</div>
-        <div class="stat-pills"><span class="pill">first pathway ready to build</span><span class="pill">sangha day one</span><span class="pill">interactive, not talking-head</span></div>
-        <div class="more"><b>Role in the ecosystem:</b> the trunk. It receives people from every discovery surface, gives them a path instead of a feed, and points the whole journey toward the land. The first pathway needs no new content: three solo episodes are transcribed and ready, and guest modules follow as each guest gives their blessing.</div>
-        <div class="hint">click to expand ▾</div>
-      </div>
-      <div class="node" onclick="this.classList.toggle('open')">
-        <h3>⛰️ Roots to Sky Sanctuary</h3>
-        <div class="role">The destination · Return</div>
-        <div class="now">125-acre BIPOC-led regenerative farm and healing arts center in northern Appalachia: ceremony, Re-Storying, fellows, farming.</div>
-        <div class="stat-pills"><span class="pill">125 acres</span><span class="pill">BIPOC-led</span><span class="pill">ceremony in person</span></div>
-        <div class="more"><b>Role in the ecosystem:</b> where the digital path leads home. No online peer owns a healing land base. This is the close of the journey nobody can copy. Institute proceeds can feed the Sanctuary's Give structure so learning itself becomes regeneration. Sacred and ceremonial content stays here, off the internet.</div>
-        <div class="hint">click to expand ▾</div>
-      </div>
-      <div class="node" onclick="this.classList.toggle('open')">
-        <h3>📚 Books, films &amp; OCU lineage</h3>
-        <div class="role">The archive · Deepen</div>
-        <div class="now">Four books, four documentary films, a TEDx talk, and 20+ years of One Common Unity SEL and conflict-transformation curricula reaching 40,000+ youth.</div>
-        <div class="stat-pills"><span class="pill">4 books · 4 films</span><span class="pill">40,000+ youth via OCU</span><span class="pill">TEDx</span><span class="pill">Kripalu 2023–24 Visionary</span></div>
-        <div class="more"><b>Role in the ecosystem:</b> readings, prompts, and the future facilitator track. Your OCU lineage is the spine of the Canopy level (embodied action) and the strongest case for educator CE credentialing later. The upcoming book's chapters thread through First Look and course readings.</div>
-        <div class="hint">click to expand ▾</div>
-      </div>
+    <div class="sec-label">The plan</div>
+    <h2>Consolidate</h2>
+    <p class="lede">You already have all the pieces but they are on separate islands. The Institute is the trunk that connects them, one path from a single episode to a daily practice to a community to the land.</p>
+    <div class="pitch-grid">
+      <div class="idea"><div class="num">01 · NOW</div><h3>Stage one connects what exists</h3><p>One front door, one login, and a community space. The podcast, Insight Timer, Substack, Patreon, and Roots to Sky keep their jobs and simply point home. I made a demo of what this could look like <a href="Everlutionary-WordPress-Demo.html">here</a>.</p></div>
+      <div class="idea"><div class="num">02 · DAY ONE</div><h3>The sangha is open and two-way</h3><p>A members' commons where people can post, reply to each other, and discuss connected to episodes, Insight Timer links, Substack posts, so comments live with the content that sparked them.</p></div>
+      <div class="idea"><div class="num">03 · LATER</div><h3>Courses come later, on WordPress</h3><p>Discrete, self-paced courses of your own design or co-developed with collaborators, podcast guests, and other space-holders. Your Patreon can unlock them by tier, so patrons sign up once and gain access.</p></div>
     </div>
   </div>
 </section>
 
-<section id="evidence">
-  <div class="wrap">
-    <div class="sec-label">The evidence</div>
-    <h2>What your audience already loves</h2>
-    <p class="lede">Public engagement signals, gathered July 9, 2026. They tell a consistent story: the conversations travel, the practices get featured, the reviews are devotional, and the audience shows up when the rhythm is steady.</p>
-
-    <div class="snapshot">
-      <div class="snap"><div class="big">5.0 ★</div><div class="lab">Apple Podcasts, 84 ratings</div></div>
-      <div class="snap"><div class="big">7,280</div><div class="lab">YouTube subscribers</div></div>
-      <div class="snap"><div class="big">17k</div><div class="lab">views on the top episode</div></div>
-      <div class="snap"><div class="big">9</div><div class="lab">episodes over 9k views</div></div>
-      <div class="snap"><div class="big">13 min</div><div class="lab">featured breath practice, Insight Timer</div></div>
-    </div>
-
-    <div class="chart">
-      <h3>Most-watched episodes on YouTube</h3>
-      <div class="note">Views as of July 9, 2026 · <b style="color:var(--leaf)">green = guest conversation</b> · <b style="color:var(--amber)">amber = solo episode</b> · runtime beside each count</div>
-      <div class="bar-row"><div class="t">Kuntanawa Nation: Amazonia &amp; the Keys to Our Future <small>· E20</small></div><div class="bar-track"><div class="bar" data-w="100"></div></div><div class="v">17k · 39 min</div></div>
-      <div class="bar-row"><div class="t">What It Takes to Heal — Prentis Hemphill <small>· E38</small></div><div class="bar-track"><div class="bar" data-w="94"></div></div><div class="v">16k · 61 min</div></div>
-      <div class="bar-row"><div class="t">Erotic Ecology — Dr. Lindsay Branham <small>· E31</small></div><div class="bar-track"><div class="bar" data-w="88"></div></div><div class="v">15k · 59 min</div></div>
-      <div class="bar-row"><div class="t">Walking On A Feather — Ariel Clark <small>· E37</small></div><div class="bar-track"><div class="bar" data-w="88"></div></div><div class="v">15k · 65 min</div></div>
-      <div class="bar-row"><div class="t">The Wetiko Psychosis — Cindy Forde <small>· guest</small></div><div class="bar-track"><div class="bar" data-w="76"></div></div><div class="v">13k · 56 min</div></div>
-      <div class="bar-row"><div class="t">Wellness is a Journey — Chris Pearson <small>· E32</small></div><div class="bar-track"><div class="bar" data-w="76"></div></div><div class="v">13k · 63 min</div></div>
-      <div class="bar-row"><div class="t">Fashion Waste &amp; Conscious Capitalism — Kerry Docherty <small>· E22</small></div><div class="bar-track"><div class="bar" data-w="76"></div></div><div class="v">13k · 48 min</div></div>
-      <div class="bar-row"><div class="t">Honoring Women and Healing Men <small>· solo</small></div><div class="bar-track"><div class="bar solo" data-w="76"></div></div><div class="v">13k · 50 min</div></div>
-      <div class="bar-row"><div class="t">Memory Under Siege: Trail of Tears to ICE Raids <small>· E33 solo</small></div><div class="bar-track"><div class="bar solo" data-w="71"></div></div><div class="v">12k · 35 min</div></div>
-      <div class="bar-row"><div class="t">Reinventing Success &amp; Healthy Masculinity — Tim Perreira <small>· E28</small></div><div class="bar-track"><div class="bar" data-w="54"></div></div><div class="v">9.2k · 68 min</div></div>
-      <div class="bar-row"><div class="t">Take the Leap: One Year Anniversary <small>· solo</small></div><div class="bar-track"><div class="bar solo" data-w="42"></div></div><div class="v">7.2k · 34 min</div></div>
-      <div class="bar-row"><div class="t">The Art of Surrender — Kute Blackson <small>· E26</small></div><div class="bar-track"><div class="bar" data-w="42"></div></div><div class="v">7.1k · 53 min</div></div>
-      <div class="bar-row"><div class="t">The Earth Day Hail Mary <small>· E24 solo</small></div><div class="bar-track"><div class="bar solo" data-w="39"></div></div><div class="v">6.6k · 38 min</div></div>
-      <div class="bar-row"><div class="t">The Values Compass — Dr. Mandeep Rai <small>· E29</small></div><div class="bar-track"><div class="bar" data-w="27"></div></div><div class="v">4.6k · 57 min</div></div>
-      <div class="bar-row"><div class="t">Let Go to Let Grow <small>· E41 solo</small></div><div class="bar-track"><div class="bar solo" data-w="25"></div></div><div class="v">4.3k · 26 min</div></div>
-      <div class="bar-row"><div class="t">Sunrays &amp; Moonbeams: The Poetry of Change <small>· E30 solo</small></div><div class="bar-track"><div class="bar solo" data-w="18"></div></div><div class="v">3.1k · 29 min</div></div>
-      <div class="legend"><span class="lg-guest">Guest conversation</span><span class="lg-solo">Solo episode</span></div>
-    </div>
-
-    <h3 class="serif" style="color:var(--pine);font-size:21px;margin-top:34px">The three breath-lengths of engagement</h3>
-    <p style="font-size:14px;color:var(--grey);max-width:760px;margin-top:4px">The timestamps across your platforms already reveal the natural containers your audience stays inside. These become the Institute's three content formats.</p>
-    <div class="breaths">
-      <div class="breath"><div class="len">~13 min</div><h4>The practice</h4><p>Your featured Insight Timer track is 13 minutes: the length people give a daily breath practice. Every module ends in one, published free.</p></div>
-      <div class="breath"><div class="len">~30–40 min</div><h4>The solo teaching</h4><p>Your strongest solo episodes (Memory Under Siege 35 min · 12k, Take the Leap 34 min, Earth Day 38 min) sit in this window. The voice of the Trunk-level modules.</p></div>
-      <div class="breath"><div class="len">~55–65 min</div><h4>The conversation</h4><p>Eight of the nine most-watched episodes are hour-long guest dialogues. The flagship format, and the shape of a live sangha circle.</p></div>
-    </div>
-
-    <h3 class="serif" style="color:var(--pine);font-size:21px;margin-top:34px">What listeners say, in their own words</h3>
-    <div class="quotes">
-      <div class="quote">"A mosaic of voices of wisdom, insight and experiences... What a gift to walk around listening to wise friends in my ears and heart!"<div class="who">— Apple Podcasts review, Mar 2025</div></div>
-      <div class="quote">"Deeply wise, nuanced, and compassionate exploration of important ideas about psychology, spirituality, and how we live together."<div class="who">— Apple Podcasts review, Sep 2025</div></div>
-      <div class="quote">"One of my favorite transcendental teachers... his way of seeing the world gives courage to all to live with their eyes open."<div class="who">— Apple Podcasts review, Dec 2024</div></div>
-    </div>
-
-    <div class="caveat">
-      <b>Read honestly:</b> these are public signals, not private analytics. Three things to hold. First, the 9k to 17k view cluster sits in episodes released across 2025, while the newest post-hiatus uploads are starting from double digits. Your audience is provably reachable, and momentum rebuilds with rhythm, not one-off pushes. Second, view counts are not watch-time; before we price anything, let's pull retention curves from YouTube Studio, listener numbers from Apple Podcasts Connect, Spotify for Creators, and your podcast host's dashboard (Fame), and member counts from Patreon. Third, Substack's light public engagement is the gap and the opportunity: the written layer exists but has never been given a job. The ecosystem gives it one.
-    </div>
-  </div>
-</section>
-
-<section id="moves">
-  <div class="wrap">
-    <div class="sec-label">From signal to design</div>
-    <h2>Six strengths, six design moves</h2>
-    <p class="lede">Each design decision in the Institute traces back to something your audience has already voted for.</p>
-    <div class="moves">
-      <div class="move"><div class="sig"><b>Hour-long guest dialogues dominate the top ten</b> — Kuntanawa, Hemphill, Branham, Clark, Forde all 13k–17k views.</div><div class="to">→</div><div class="act"><b>The archive is the curriculum.</b> Guest episodes become co-created modules (with consent), and guests become the shared teaching sangha that eases your solo load.</div></div>
-      <div class="move"><div class="sig"><b>Your own storytelling lands when it's personal and justice-rooted</b> — Memory Under Siege (12k) and Honoring Women, Healing Men (13k) outperform most guests.</div><div class="to">→</div><div class="act"><b>Signature modules in your voice anchor the Trunk level.</b> Race, belonging, rest, and grief told in your own story are the heart of the path, not filler between interviews.</div></div>
-      <div class="move"><div class="sig"><b>Justice + healing held together is the draw</b> — decolonizing wealth, wetiko, colonization and psychedelics, Indigenous futures top the charts.</div><div class="to">→</div><div class="act"><b>Keep Branches central, not optional.</b> The decolonizing level is the differentiator no peer platform owns; it stays in the spine of every pathway.</div></div>
-      <div class="move"><div class="sig"><b>Practice travels fastest</b> — two months on Insight Timer and the 13-minute breath is already your featured, 5-star track.</div><div class="to">→</div><div class="act"><b>Practice-first front door.</b> Every module releases a free short practice to Insight Timer; the Somatic Sanctuary grows into the Institute's practice library.</div></div>
-      <div class="move"><div class="sig"><b>Reviews read like devotion</b> — 5.0 from 84 ratings, language like "wise friends in my ears."</div><div class="to">→</div><div class="act"><b>The founding circle already exists.</b> Launch to your Sustainers and Partners, your reviewers, and your retreat alumni first; their pre-sale funds the build with no debt.</div></div>
-      <div class="move"><div class="sig"><b>Momentum follows rhythm</b> — views cluster when the show published steadily and reset toward zero across the hiatus.</div><div class="to">→</div><div class="act"><b>Seasonal community rhythm over a publishing treadmill.</b> The Institute's live circles create a heartbeat that doesn't depend on a biweekly episode, and protects your rest.</div></div>
-    </div>
-  </div>
-</section>
-
-<section id="patreon">
-  <div class="wrap">
-    <div class="sec-label">Continuity, not replacement</div>
-    <h2>Every Patreon promise, deepened</h2>
-    <p class="lede">The membership you already offer is the Institute in embryo. Your Partners, Sustainers, Alchemists, Visionaries, Fire Keepers, and Space Holders become the founding circle, carrying their names with them as honored roles. Nothing they love is taken away.</p>
-    <table>
-      <tr><th>Patreon today</th><th>What it proves</th><th>Institute tomorrow</th></tr>
-      <tr><td>The Somatic Sanctuary — bonus guided meditations, pranayama, visualization</td><td>People pay for your practices, not just your conversations.</td><td>The Practice Library: the Roots level of every pathway, growing module by module, with free tastes on Insight Timer.</td></tr>
-      <tr><td>Generate Show Ideas — polls on guests, themes, artwork</td><td>The community wants a hand in shaping the work.</td><td>Co-created curriculum: member councils vote on the next episode-module, propose circle themes, and shape the map.</td></tr>
-      <tr><td>First Look — early book chapters and pre-reading</td><td>Appetite for the written, reflective layer.</td><td>The Substack reflection layer: chapters become course readings; prompts and distilled teachings publish to members first.</td></tr>
-      <tr><td>The Deep Dive — one 60-minute 1:1 per 6 months</td><td>1:1 access is precious and scarce. One hour of you per member per half-year cannot scale.</td><td>Live practice labs, story circles, and office hours hold the intimacy in groups; the 1:1 Deep Dive survives as a small premium tier so your calendar breathes.</td></tr>
-      <tr><td>On-Air Shout Out — a personal thank-you in an episode</td><td>Belonging and being seen matter as much as content.</td><td>Community rituals: welcome ceremonies in circle, dedications at gatherings, and founding honors by name. Partner, Sustainer, Alchemist, Visionary, Fire Keeper, and Space Holder become living community roles in the Institute, not price points.</td></tr>
-    </table>
-    <p class="tbl-note">Patron counts and tier revenue live in your Patreon dashboard. Let's pull them together before pricing the founding membership, and tell me if I've honored the role names (Partner, Sustainer, Alchemist, Visionary, Fire Keeper, Space Holder) the way you intend them.</p>
-  </div>
-</section>
-
-<section id="platform">
+<section id="home">
   <div class="wrap">
     <div class="sec-label">Where it lives</div>
-    <h2>Where it lives: two good homes</h2>
-    <p class="lede">I looked at what you already run and what our kindred organizations actually use. Your whole world lives on WordPress: hawahkasat.com and rootstosky.net both. The Pocket Project runs its entire school (courses, practice groups, events) on WordPress; Yoga for Humankind pairs a WordPress site with a separate trainings portal. And it is honest to say that none of the values-peers use a community platform like Circle. So the real choice comes down to two homes, and it turns on what the Institute is first.</p>
-
+    <h2>Build it on WordPress</h2>
+    <p class="lede">One home holds the whole ecosystem. My recommendation is WordPress, because it keeps the community and, later, the courses under one roof you own. Circle is a strong alternative if you would rather have the most turnkey community tool from day one.</p>
     <div class="paths">
       <div class="path">
-        <h3>🔥 Circle-first</h3>
-        <div class="tagline">A hearth with a school inside it</div>
+        <h3>&#127760; WordPress (recommended)</h3>
         <dl>
-          <dt>What it is</dt><dd>A community platform (<a href="https://circle.so/platform">Circle</a>) where the sangha, the pathways, live circles, and payments share one roof. The commons opens on day one with no course attached: Idea 1 is native here, not bolted on.</dd>
-          <dt>Why it fits you</dt><dd>Calm, spaces-based, and nothing to maintain. Your fire keepers and space holders get rooms of their own, the episode-map explorer embeds cleanly, live streams and small live rooms are built in, and members are unlimited on every plan.</dd>
-          <dt>What it costs</dt><dd>$89/mo annual (Professional) to $199/mo (Business), plus 0.5–2% fees on top of Stripe's. July 2026 pricing, reconfirm at signup.</dd>
-          <dt>What it asks</dt><dd>A subscription for as long as the Institute lives, and the home is leased: members and content are exportable, but the land is Circle's.</dd>
-          <dt>Choose this if</dt><dd>The sangha is the product. Belonging comes first, and courses are how belonging deepens.</dd>
+          <dt>Why</dt><dd>You own the members, the content, and the domain. The community runs on a plugin such as BuddyBoss, and future courses live here too, gated by your Patreon tiers.</dd>
+          <dt>Cost</dt><dd>Roughly $300 to $600 per year in plugins, on hosting you already pay for. No per-member fees beyond Stripe or Patreon.</dd>
+          <dt>See it</dt><dd><a class="bigbtn" href="Everlutionary-WordPress-Demo.html">See the WordPress demo &#8594;</a></dd>
         </dl>
       </div>
       <div class="path alt">
-        <h3>🌐 WordPress-first</h3>
-        <div class="tagline">A school on land you already own</div>
+        <h3>&#128293; Circle (alternative)</h3>
+        <div class="tagline">A turnkey community, leased not owned</div>
         <dl>
-          <dt>What it is</dt><dd>The Institute built into the WordPress you already run, with a course plugin (LifterLMS or LearnDash) and a membership layer. The explorer lives natively, and everything sits on your own domain.</dd>
-          <dt>Why it fits you</dt><dd>Full ownership of members, data, and home, with the lowest long-term cost. And it is the proven path of your peers: the Pocket Project runs entirely on WordPress, and Yoga for Humankind's WordPress-plus-portal model shows the same road.</dd>
-          <dt>What it costs</dt><dd>Roughly $300–600/yr in plugins on hosting you already pay for; no per-member fees beyond Stripe's.</dd>
-          <dt>What it asks</dt><dd>A steward. Rooted Action tends updates, security, and support, and the community spaces need deliberate care to feel like a hearth rather than a comment thread. Live circles run through Zoom links, since nothing live is built in.</dd>
-          <dt>Choose this if</dt><dd>Ownership and long-term economics lead. The school comes first, and the sangha grows around it at its own pace.</dd>
+          <dt>Why</dt><dd>The sangha, live circles, and payments share one roof with nothing to maintain, and member-to-member conversation is built in.</dd>
+          <dt>Cost</dt><dd>Roughly $1,100 to $2,400 per year (the $89 to $199 per month Professional and Business plans, billed annually), plus 0.5 to 2 percent transaction fees on top of Stripe. The home is leased, and courses would still be built on WordPress, so this path means two connected homes later.</dd>
+          <dt>Trade</dt><dd>The best community tool now, but in exchange for a subscription and less ownership.</dd>
         </dl>
       </div>
     </div>
-
-    <div class="hinge"><b style="color:var(--pine);font-family:Georgia,serif">The one question that decides it:</b> is the Everlutionary Institute first a sangha with a school inside it, or a school with a sangha growing around it? Either home can open the first season within a few months, and while the founding circle is small, moving between them later is very doable. My read of your gifts leans Circle; the path your peers have walked leans WordPress. This one is yours to feel into, and I will build either.</div>
-
-    <p class="tbl-note">Paths considered and set aside for now: staying on Patreon alone (chats and livestreams now, but no course structure and a scattered member experience); a Kajabi portal on a subdomain (Yoga for Humankind's exact model, but ~$149+/mo buys marketing machinery we don't need yet); a course-first LMS like Thinkific or Teachable (a catalog, when what we need is a commons); and building the school inside Insight Timer (a mighty free funnel, and it stays exactly that: they own the members, so it remains the gift, not the home). If a formal teacher-training track arrives in Phase 3 and demands hour-by-hour CE logging, that is the moment to revisit dedicated LMS tooling.</p>
-
-    <h3 class="serif" style="color:var(--pine);font-size:21px;margin-top:34px">Everything you already use keeps its job</h3>
-    <div class="eco-grid" style="margin-top:16px">
-      <div class="node" style="cursor:default"><h3>🌐 WordPress — hawahkasat.com</h3><div class="role">Public front door</div><div class="now">Stays as is. It hosts the episode-map explorer natively (WordPress takes custom HTML), and on the WordPress-first path it becomes the Institute's home itself. No rebuild either way.</div></div>
-      <div class="node" style="cursor:default"><h3>🤝 Patreon</h3><div class="role">The bridge, not the building</div><div class="now">It now has chats and ticketed livestreams, but no structured courses, so it cannot be the Institute. Your patrons become founding members of the Institute with honored status, whichever home we choose; billing consolidates over a season so nobody pays twice.</div></div>
-      <div class="node" style="cursor:default"><h3>✍️ Substack</h3><div class="now" style="margin-top:6px">Stays the free reflection layer. Hold off on a paid Substack tier: one membership, one place to explain.</div></div>
-      <div class="node" style="cursor:default"><h3>🧘 Insight Timer · ▶️ YouTube · 🎙️ Apple Podcasts &amp; Spotify</h3><div class="now" style="margin-top:6px">Unchanged. These are the funnels; every practice, excerpt, and episode points home to the Institute. Behind them, your podcast host (Fame) keeps distributing to every app.</div></div>
-    </div>
-
-    <div class="caveat" style="margin-top:26px"><b>Credentialing note:</b> certificates and badges (Tier 1) work on either path: Circle's completion tracking, or the LMS plugin on WordPress, plus Credly or Accredible. Nothing about this choice closes the credentialing door. Platform pricing shifts often; we reconfirm all figures at signup and look at your Patreon member counts together before setting the migration pace.</div>
-  </div>
-</section>
-
-<section id="collaborators">
-  <div class="wrap">
-    <div class="sec-label">The wider sangha</div>
-    <h2>Collaborator map: rivers flowing nearby</h2>
-    <p class="lede">Others are doing kindred work, and none of them are rivals. Each holds something the Institute doesn't need to build, and the Institute holds what none of them have: a BIPOC-led healing land, a plural and neo-indigenous lineage, justice at the center, and a living archive of conversations. Here is where the waters could meet.</p>
-    <table style="font-size:13px">
-      <tr><th>Who</th><th>What they hold</th><th>What the Institute adds</th><th>How we could weave together</th></tr>
-      <tr><td>Kripalu Center</td><td>The largest yoga center in the country; retreats, schools, a vast audience.</td><td>An intimate online home their catalog can't offer.</td><td>You're already faculty and a 2023–24 Visionary there. Their audience meets you on campus; the Institute is where the relationship continues year-round.</td></tr>
-      <tr><td>Insight Meditation Community of Washington (IMCW)</td><td>A beloved DC sangha: open circles, online dharma talks, deep local roots.</td><td>Land, plural lineage, and justice held at the center.</td><td>Your closest local peer. Shared DC circles, guest sits in each other's spaces, cross-invitations for retreats.</td></tr>
-      <tr><td>Off the Mat Into the World</td><td>Yoga-and-justice leadership training since 2007.</td><td>A land base and an archive of conversations their trainings can draw on.</td><td>Guest fire keepers in both directions; their facilitators are natural allies for the Canopy level.</td></tr>
-      <tr><td>Thomas Hübl / Pocket Project</td><td>Collective-trauma healing in large online cohorts; proof the model works at scale.</td><td>Intimacy, land, and BIPOC leadership where their work is broad and global.</td><td>Dialogue exchanges and guest circles. Reggie Hubbard has already bridged both worlds on their podcast.</td></tr>
-      <tr><td>Heart Mind Institute</td><td>An open community of practice with live circles, the closest structural model.</td><td>Mission-first and land-rooted where theirs is platform-first.</td><td>A model to study more than a partner to court; summit and teacher exchanges are possible down the road.</td></tr>
-      <tr><td>Sounds True</td><td>The premier publisher and distributor of contemplative teaching.</td><td>The relational home their scaled courses can't hold.</td><td>A future distribution channel for the book or a flagship course, once the Institute has proven its shape.</td></tr>
-      <tr><td>The Belong Center</td><td>Radha Agrawal's community-building movement: secular, entrepreneurial, scale-first.</td><td>Lineage, land, and justice; community as sangha rather than method.</td><td>Mutual referral for people seeking each other's medicine. Their name is also why our path stage says Connect, not Belong: the waters stay distinct.</td></tr>
-      <tr><td>American University</td><td>Peace, SEL, and justice faculty; the Antiracism Center; your alma mater.</td><td>An embodied practice home for their scholarship.</td><td>Guest teachers for the Canopy level and a credentialing route for a future micro-credential (see the curriculum workbook for names).</td></tr>
-    </table>
-    <p class="tbl-note">The full peer scan, with pricing references and the institute-by-institute detail, lives in the Discovery &amp; Strategy Map. This is the short version: the field is crowded, and your confluence is still open water.</p>
-  </div>
-</section>
-
-<section id="pitch">
-  <div class="wrap">
-    <div class="sec-label">The proposal</div>
-    <h2>The pitch, in five ideas</h2>
-    <p class="lede">Each one builds directly on something already working, and each carries its moment on the timeline. The sangha comes first: we tend the fire before we open the doors.</p>
-    <div class="pitch-grid">
-      <div class="idea" style="border-top-color:var(--amber)"><div class="num">IDEA 01</div><div class="when">Begins now · month 0, before launch</div><h3>Sangha open from day one</h3><p>The community space is never gated behind a course, and it opens before anything else. We develop the sangha rhythms now: welcome rituals, weekly prompts, story circles, dedications, and the first space holders drawn from your most devoted members, so people arrive into a living room, not an empty hall.</p><div class="why">Why first: belonging is the product; courses are how belonging deepens. A warm commons at launch is what makes every other idea land.</div></div>
-      <div class="idea"><div class="num">IDEA 02</div><div class="when">Months 1–3 · runs with every episode</div><h3>The alchemy of one conversation</h3><p>Every conversation transmutes into three artifacts sized to proven attention: a 13-minute practice (Insight Timer, free), a 35-minute teaching (module core), an hour-long dialogue (flagship + live circle). One recording, three doors.</p><div class="why">Why now: your own timestamps already prove all three containers work. This is alchemy, not new production. Three solo episodes are transcribed and ready to transmute first.</div></div>
-      <div class="idea"><div class="num">IDEA 03</div><div class="when">Blessings now · circles from month 3</div><h3>Guests become fire keepers</h3><p>The most-watched episodes are dialogues with natural co-teachers: Prentis Hemphill, Edgar Villanueva, Hilary Giovale, Ariel Clark. Invite each to bless a module or hold space for one live circle a year, tending the flame with you.</p><div class="why">Why now: it shares the load you can't carry alone, and the audience has already chosen these voices. The asks go out early so the calendar can breathe.</div></div>
-      <div class="idea"><div class="num">IDEA 04</div><div class="when">Months 2–4 · as the first modules land</div><h3>The episode-map explorer</h3><p>An interactive, explorable map of the archive: every episode a node that opens into its theme, practice, reflection, and guest's wisdom. The texture big platforms can't copy.</p><div class="why">Why then: 44+ episodes is a living archive nobody else has; this makes it feel like one body of work instead of a feed, once the first modules prove the shape.</div></div>
-      <div class="idea"><div class="num">IDEA 05</div><div class="when">Invitation open always · no set timeline</div><h3>The return to the land</h3><p>Every pathway carries an open invitation to Roots to Sky: ceremony, land, in-person sangha, for those who feel called. Never a requirement, never a finish line. A share of Institute proceeds feeds the Sanctuary, so learning funds regeneration even for those who never make the trip.</p><div class="why">Why gently: no online peer owns a healing land base, and it keeps the sacred off the internet. It also carries the most logistics, so it stays a light invitation until the sangha's own longing sets the pace.</div></div>
-    </div>
+    <div class="hinge"><b style="color:var(--pine);font-family:Georgia,serif">The short of it:</b> WordPress if ownership and one roof matter most, Circle if the turnkey community matters most. The full comparison, costs, community mechanics, and the Patreon setup steps are in the <a href="everlutionary-ecosystem-map.html#patreon-wp">detailed companion</a>.</div>
   </div>
 </section>
 
 <section id="next">
   <div class="wrap">
-    <div class="sec-label">Where we go from here</div>
+    <div class="sec-label">Next steps</div>
     <h2>Next steps</h2>
     <ol class="next">
-      <li>Pull the private numbers together: YouTube Studio watch-time, listener stats from Apple Podcasts Connect, Spotify for Creators, and your podcast host (Fame), Patreon member counts, the Substack subscriber list. They sharpen every decision here.</li>
-      <li>Confirm the three early decisions: brand architecture, first audience, and the one signature offering.</li>
-      <li>Ask the first guest blessings, starting with the most-watched conversations, and invite those guests as fire keepers.</li>
-      <li>Turn one episode into the first module draft so we can walk the flow end to end, then choose the pilot platform and shape the founding-circle pre-sale.</li>
+      <li>Open the <a href="Everlutionary-WordPress-Demo.html">WordPress demo</a>: what feels right? What is missing?</li>
+      <li>Confirm the home: WordPress or Circle.</li>
+      <li>Decide on roles: who connects content to the WordPress or Circle build? Who leads the build?</li>
+      <li>Connect the first surfaces and open the community space with its welcome rituals.</li>
+      <li>Turn one existing episode into the first connected module, in three formats. No new content required.</li>
     </ol>
+    <p class="tbl-note">Full details by content area, the audience and evidence, the surfaces, platform economics, the curriculum, the community, membership and the gift economy, the wider field, and the Patreon and WordPress setup, live in the <a href="everlutionary-ecosystem-map.html">detailed companion</a>.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div class="tag">From root to sky: ground first, then rise.</div>
-    <div>Prepared by Ally Krupar · Rooted Action · July 2026. Public data gathered July 9, 2026 from Apple Podcasts, YouTube (@everlutionary), everlutionary.substack.com, insighttimer.com/HawahKasat, patreon.com/Everlutionary (benefits as listed by the creator), hawahkasat.com, and rootstosky.net. Platform pricing from <a href="https://circle.so/pricing">circle.so/pricing</a> and mightynetworks.com/pricing, checked July 9, 2026; Kajabi, Thinkific, and Teachable figures from June 2026 research, reconfirm at signup. Verify all figures against private dashboards before publishing or pricing. A living draft, meant to be shaped together.</div>
+    <div>Prepared by Ally Krupar · Rooted Action · July 2026. A living draft, meant to be shaped together.</div>
   </div>
 </footer>
 
-<script>
-  // animate bars when they scroll into view
-  const bars = document.querySelectorAll('.bar');
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.style.width = e.target.dataset.w + '%'; io.unobserve(e.target); } });
-  }, {threshold: .4});
-  bars.forEach(b => io.observe(b));
-</script>
 </body>
 </html>
